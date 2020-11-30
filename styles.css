@@ -12,14 +12,18 @@
   --danger-color: #94373f;
 }
 
+/**
+* FOUNDATION
+*/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
-  /* background: #000; */
   background: var(--primary-color);
   font-family: var(--body-font);
   font-size: 16px;
@@ -32,7 +36,6 @@ h3 {
   font-weight: bold;
   text-shadow: 0px 1px 1px #000000;
 }
-
 h2 {
   font-size: 30px;
   color: #94373f;
@@ -43,7 +46,6 @@ h3 {
 .lead {
   font-size: 20px;
 }
-
 .btn {
   background: var(--danger-color);
   border-radius: 5px;
@@ -61,14 +63,13 @@ h3 {
   border: none;
   color: var(--white);
 }
-
 button:focus {
   outline: none;
 }
-/**
-* NAV 
-*/
 
+/**
+* NAVBAR
+*/
 .navbar-toggler-icon {
   background-image: none;
 }
@@ -79,18 +80,22 @@ button:focus {
   display: flex;
   color: var(--white);
 }
-
+.navbar-dark {
+  background: var(--primary-opacity);
+}
 .navbar-dark .navbar-toggler-icon {
   background: transparent;
 }
 .navbar-toggler {
   border: none;
 }
-.show {
+/* .show {
   padding-bottom: 85px;
-}
-.nav-bg {
+} */
+/* .navbar {
   background-color: var(--primary-opacity);
+} */
+.nav-bg {
   z-index: 100;
   margin-top: 10px;
 }
@@ -104,7 +109,6 @@ button:focus {
   padding-left: 5px;
 }
 .navbar-collapse {
-  /* background: var(--primary-color); */
   background: transparent;
 }
 .navbar-collapse ul {
@@ -113,7 +117,6 @@ button:focus {
 .navbar-collapse button {
   margin: 0 15px;
 }
-
 .nav-link:hover {
   background: var(--primary-color-lightest);
   padding: 6px 10px;
@@ -121,8 +124,11 @@ button:focus {
   border-radius: 5px;
 }
 
+/**
+* HERO CAROUSEL
+*/
 .carousel {
-  top: -70px;
+  top: -25px;
 }
 .carousel-inner {
   /* need z-index to be low so text content div can overlap and not be affected */
@@ -159,7 +165,6 @@ button:focus {
 .hero-text-content {
   color: var(--white);
   text-align: center;
-  /* margin: 0 55px; */
   margin: 0 10%;
   font-size: 20px;
   font-weight: normal;
@@ -187,7 +192,6 @@ button:focus {
 .content {
   background: var(--primary-color);
 }
-
 .search-form {
   color: var(--white);
   width: 80%;
@@ -214,10 +218,8 @@ button:focus {
 .form-control {
   color: #000;
   background-color: transparent;
-  /* background-clip: padding-box; */
   border: none;
   padding: 6px 0;
-  /* border-radius: .25rem;*/
 }
 .input-group {
   margin-bottom: 10px;
@@ -230,12 +232,14 @@ button:focus {
   border: none;
 }
 
+/**
+* CARD CONTENT
+*/
 .destination-cards {
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 .card {
   margin: 20px 0;
   width: 90%;
@@ -244,7 +248,6 @@ button:focus {
   box-shadow: 0px 3px 3px #f9f9f9;
   border-radius: 10px;
 }
-
 .card-img-top {
   width: 100%;
   max-width: 340px;
@@ -272,6 +275,9 @@ button:focus {
   text-shadow: 0px 3px 6px gray;
 }
 
+/**
+* FOOTER
+*/
 footer {
   align-items: center;
   flex-direction: column;
