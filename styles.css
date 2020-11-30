@@ -128,7 +128,7 @@ button:focus {
 * HERO CAROUSEL
 */
 .carousel {
-  top: -25px;
+  top: 0;
 }
 .carousel-inner {
   /* need z-index to be low so text content div can overlap and not be affected */
@@ -201,7 +201,7 @@ button:focus {
   border-radius: 15px;
   display: flex;
   align-items: center;
-  margin: -110px auto 0 auto;
+  margin: -50px auto 0 auto;
   flex-direction: column;
   /* higher than carousel so that it overlaps */
   z-index: 1;
@@ -239,6 +239,8 @@ button:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* aos transition adds width */
+  overflow-x: hidden;
 }
 .card {
   margin: 20px 0;
