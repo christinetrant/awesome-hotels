@@ -86,11 +86,11 @@ button:focus {
 .navbar-toggler {
   border: none;
 }
-
+.show {
+  padding-bottom: 85px;
+}
 .nav-bg {
   background-color: var(--primary-opacity);
-  padding-bottom: 85px;
-
   z-index: 100;
   margin-top: 10px;
 }
